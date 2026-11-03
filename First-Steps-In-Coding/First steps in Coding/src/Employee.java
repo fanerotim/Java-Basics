@@ -1,9 +1,18 @@
-public class Employee {
+public static class Person {
+    public String nationality;
+
+    public Person(String nationality) {
+        this.nationality = nationality;
+    }
+}
+
+public class Employee extends Person {
     public String name;
     public int age;
     public String occupation;
 
     public Employee(String name, int age, String occupation) {
+        super("Bulgarian");
         this.name = name;
         this.age = age;
         this.occupation = occupation;
@@ -11,7 +20,7 @@ public class Employee {
     }
 
     public void print() {
-        System.out.printf("Your name is %s. You are %s years old and your occupation is %s", this.name, this.age, this.occupation);
+        System.out.printf("Your name is %s. You are %s years old and your occupation is %s and you are %s", this.name, this.age, this.occupation, this.nationality);
     }
 }
 

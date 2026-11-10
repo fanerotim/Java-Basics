@@ -26,7 +26,7 @@ public class Employee extends Person {
 
 public void main() {
     Employee employeeOne = new Employee("Petar", 38, "Junior developer and a new student", "Bulgarian");
-    Athlete athleteOne = new Athlete("long distance runner");
+    Athlete athleteOne = new Athlete("long distance runner", "Ivan");
     athleteOne.print();
 }
 
